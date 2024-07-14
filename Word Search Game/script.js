@@ -52,6 +52,7 @@ function ValidityCheck(){
     for(let w = 1; w < pickIndexArray.length; w++){
       if(pickIndexArray[w] - pickIndexArray[w-1] !== 4 && pickIndexArray[w] - pickIndexArray[w-1] !== 1 && pickIndexArray[w] - pickIndexArray[w-1] !== 5){
         alert('Cant Pick That');
+        choiceArray[w].style.backgroundColor = '';
         pickIndexArray.length = pickIndexArray.length - 1;
         pickLetterArray.length = pickLetterArray.length - 1;
         choiceArray.length = choiceArray.length - 1;
